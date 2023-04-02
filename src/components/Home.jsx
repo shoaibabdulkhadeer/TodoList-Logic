@@ -16,17 +16,15 @@ const Home = () => {
     setTodo([...todo,value])
    setValue("")
   }
-  
  }
 
+ //Delete logic function
  const del = (id) => {
       setTodo((olditems) => {
         return olditems.filter((array,index)=> {
           return index !== id
         })
-      })
-        
-        
+      })   
  }
     
   return (
